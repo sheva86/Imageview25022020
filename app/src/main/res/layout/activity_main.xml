@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#f20"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hinh1" />
+
+    <Button
+        android:id="@+id/bottonPreviuos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Previuos" />
+    <Button
+        android:text="Next"
+        android:layout_below="@id/imageview"
+        android:id="@+id/bottonNext"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Random"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bottonPreviuos"
+        android:layout_marginTop="50dp"
+        android:id="@+id/buttonRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="AutoNext"
+        android:layout_below="@id/buttonRandom"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/buttonAutonext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="AutoPreviuos"
+        android:layout_below="@id/buttonRandom"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/buttonAutoPreviuos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
